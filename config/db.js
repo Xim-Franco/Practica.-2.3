@@ -17,7 +17,7 @@ export default class DB {
         });
 
         dbConnection.on("error", (err) => {
-            console.error(`connection error: ${err}`);
+            console.error(`Connection error: ${err}`);
         });
         return;
     }
