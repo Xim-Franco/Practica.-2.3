@@ -6,7 +6,7 @@ export default class DB {
         //const url = "mongodb://127.0.0.1/blog_db";
 
         try {
-            mongoose.connect(DB_URI);
+            await mongoose.connect(DB_URI);
         } catch (err) {
             console.error(err.message);
             process.exit(1);
